@@ -10,10 +10,13 @@ def addLetters(place):
         if words[place] in letters:
             forward.append(words[place])
             backward.insert(0, words[place])
-            place += 1
-            addLetters(place)
+        place += 1
+        addLetters(place)
 
 addLetters(count)
+
+print(forward)
+print(backward)
 
 if forward == backward:
     print(words + " is a palidrome!")
