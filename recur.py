@@ -15,8 +15,7 @@ def addLetters(place):
 
 addLetters(count)
 
-print(forward)
-print(backward)
+
 
 if forward == backward:
     print(words + " is a palidrome!")
